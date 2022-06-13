@@ -133,7 +133,7 @@ def kitti(yolo_dir, kitti_dir, label=None):
 			kittif = open(kitti_dir + "train/labels/" + f, "a+")
 			for l, c in zip(labels, coords):
 				kittif.write(l + " 0 0 0 " + str(c[0]) + " " + str(c[1]) +
-					" " + str(c[2]) + " " + str(c[3]) + " 0 0 0 0 0 0 0 0\n")
+					" " + str(c[2]) + " " + str(c[3]) + " 0 0 0 0 0 0 0\n")
 			kittif.close()
 
 	# Iterate through yolo validation data
@@ -148,7 +148,7 @@ def kitti(yolo_dir, kitti_dir, label=None):
 			kittif = open(kitti_dir + "val/labels/" + f, "a+")
 			for l, c in zip(labels, coords):
 				kittif.write(l + " 0 0 0 " + str(c[0]) + " " + str(c[1]) +
-					" " + str(c[2]) + " " + str(c[3]) + " 0 0 0 0 0 0 0 0\n")
+					" " + str(c[2]) + " " + str(c[3]) + " 0 0 0 0 0 0 0\n")
 			kittif.close()
 
 
